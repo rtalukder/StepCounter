@@ -19,19 +19,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="start"
-        android:id="@+id/button"
-        android:layout_marginBottom="86dp"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:onClick="startWalk" />
+        android:id="@+id/btnStart"
+        android:onClick="startWalk"
+        android:layout_marginTop="67dp"
+        android:layout_below="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="stop"
-        android:id="@+id/button2"
+        android:id="@+id/btnStop"
+        android:onClick="stopWalk"
         android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/button"
-        android:onClick="stopWalk"/>
+        android:layout_toEndOf="@+id/textView" />
 
 </RelativeLayout>
